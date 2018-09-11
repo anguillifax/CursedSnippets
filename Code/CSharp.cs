@@ -8,6 +8,10 @@ using System.Collections.Generic;
 
 public class Code {
 
+	enum Boolenum {
+		True, False
+	}
+	
 	void Function() {
 
 		try {
@@ -30,7 +34,7 @@ public class Code {
 
 
 		object ob = new object();
-		ob = ob as object;
+		ob = (object)ob;
 		Console.WriteLine((null ?? ob).ToString());
 
 
